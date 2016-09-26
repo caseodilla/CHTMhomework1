@@ -3,3 +3,165 @@
     Author     : chayes10
 */
 
+/* Site-wide */
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Screens > 500px */
+
+@media only screen and (min-width: 501px) {
+  
+  /* Table */
+  
+  table {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,h2 {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-decoration: underline;
+    margin: 15px 0 0 0;
+    font-weight: 700;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  /* Table Header */
+
+  thead {
+    text-align: center;
+  }
+
+  thead ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    list-style: none;
+  }
+
+  thead li { 
+    content: " •"
+  }
+
+  thead li:first-child {
+    list-style: none;
+  }
+
+  /* Title Row */
+  .title td div {
+    display: inline;
+    float: left;
+  }
+
+  .title td div:first-of-type {
+    font-weight: 700;
+  }
+
+  .title td div:first-of-type:after {
+    content: "\00a0";
+  }
+
+  .title td div:last-of-type {
+    float: right;
+    text-align: right;
+  }
+
+  .title + tr {
+    font-style: italic;
+  }
+}
+
+/* Screens <= 500px */
+
+@media only screen and (max-width: 500px) {
+  
+  /* Table */
+  
+  table {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,h2 {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-decoration: underline;
+    margin: 15px 0 0 0;
+    font-weight: 700;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  /* Table Header */
+
+  thead {
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  thead ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  thead ul li { 
+    list-style: none; 
+    display: inline;
+  }
+
+  thead ul li:after {
+    content: " •";
+  }
+
+  thead ul li:last-child:after {
+    content: none;
+  }
+
+  /* Title Row */
+  .title td div {
+    display: inline;
+    float: left;
+  }
+
+  .title td div:first-of-type {
+    font-weight: 700;
+  }
+
+  .title td div:first-of-type:after {
+    content: "\00a0";
+  }
+
+  .title td div:last-of-type {
+    float: right;
+    text-align: right;
+  }
+
+  .title + tr {
+    font-style: italic;
+  }
+}
