@@ -1,0 +1,89 @@
+/*©2016 Tanner McIntyre. All Rights Reserved.*/
+
+* {
+	margin:0;
+	padding:0;
+	font-family:arial, sans-serif;
+}
+main{
+	margin: 10px 10px;
+}
+header{
+	text-align: center;
+}
+h1{
+	font-size: 1.7em;
+}
+h2{
+	font-size: 1.2em;
+	text-decoration: underline;
+}
+li{
+	margin-left: 40px;
+}
+.block{
+	margin-top: 15px;
+}
+.todo{
+	color: red;
+}
+
+@media screen and (min-width: 501px){
+	body{
+		width:750px;
+		margin: 0 auto;
+	}
+	.date{
+		float:right;
+		}
+	.dateleft{
+		float:left;		
+	}
+	.clear {
+		clear:both;
+	}
+	#contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+	}
+	.contact-row {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 0;
+	}
+	.contact-row:last-of-type {
+    margin-left: 0;
+    margin-right: auto;
+	}
+	.contact:after {
+    content: "\00a0•\00a0";
+	}
+	.contact-last:after {
+    content: "";
+	}
+}
+@media screen and (max-width: 500px){
+	body{
+		width: 100%;
+		}
+	#contact {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+	}
+	.dateleft{
+		white-space: nowrap;
+	}
+	.contact-row {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+	}
+	.contact:first-child:after {
+    content: "\00a0•\00a0";
+	}
+}
