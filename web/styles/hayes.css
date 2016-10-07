@@ -1,6 +1,7 @@
 /* 
-    Created on : Sep 25, 2016, 8:33:50 PM
-    Author     : chayes10
+  Created on : Sep 25, 2016, 8:33:50 PM
+  Author     : chayes10
+  ©2016 Casey Hayes. All Rights Reserved.
 */
 
 /* Site-wide */
@@ -16,9 +17,9 @@ body {
 }
 
 h1 {
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 h1,h2 {
@@ -26,16 +27,17 @@ h1,h2 {
 }
 
 h2 {
-  text-decoration: underline;
-  margin: 15px 0 0 0;
+  font-size: 1.2em;
   font-weight: 700;
+  margin: 15px 0 0 0;
+  text-decoration: underline;
 }
 
 ul {
   margin: 0 0 15px 0;
 }
 
-div.employer:after {
+div.location:before {
   content: ",\00a0";
 }
 
@@ -123,6 +125,9 @@ dd {
 
 @media only screen and (max-width: 501px) {
 
+  body {
+    min-width: 315px;
+  }
   /* Header Contact */
 
   #contact {
