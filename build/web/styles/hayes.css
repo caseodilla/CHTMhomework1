@@ -35,6 +35,10 @@ ul {
   margin: 0 0 15px 0;
 }
 
+div.employer:after {
+  content: ",\00a0";
+}
+
 /* Screens > 500px */
 
 @media only screen and (min-width: 500px) {
