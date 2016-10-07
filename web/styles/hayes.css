@@ -39,6 +39,19 @@ div.employer:after {
   content: ",\00a0";
 }
 
+dl,p {
+  margin: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  display: list-item;
+  list-style-type: disc;
+}
+
 /* Screens > 500px */
 
 @media only screen and (min-width: 500px) {
@@ -46,7 +59,7 @@ div.employer:after {
   body {
     min-width: 600px;
   }
-  
+
   /* Header Contact */
 
   #contact {
@@ -100,6 +113,7 @@ div.employer:after {
 
   div.position {
     font-style: italic;
+    font-weight: 700;
     order: 4;
     width: 100%;
   }
@@ -155,7 +169,12 @@ div.employer:after {
 
   div.position {
     font-style: italic;
+    font-weight: 700;
     order: 3;
     width: 100%;
   }
+}
+
+#education div.position {
+  font-weight: 100;
 }
